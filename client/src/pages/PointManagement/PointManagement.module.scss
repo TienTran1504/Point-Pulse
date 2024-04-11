@@ -1,0 +1,42 @@
+.wrapper {
+    padding: 12px 24px;
+}
+.button_wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+}
+.button_wrapper button {
+    padding: 16px 15px;
+    font-style: bold;
+}
+.icon {
+    margin-left: 24px;
+    font-size: 20px;
+}
+
+.actions {
+    display: flex;
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.active {
+    color: var(--primary) !important;
+}
+.menu-item {
+    display: inline-block;
+    margin: 0 48px;
+
+    & a {
+        font-size: 20px;
+        color: #000;
+        text-decoration: none;
+    }
+    & a:hover {
+        opacity: 0.6;
+    }
+    font-weight: 500;
+}

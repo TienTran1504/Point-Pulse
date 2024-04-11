@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  height: 100rem;
+
+  overflow-x: scroll;
+
+  table.table-project-point {
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: 100%; /* Make sure the table takes the full width of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+}
+.stickyRow {
+  position: sticky;
+  top: 0;
+  background-color: #bdd7ee; /* Sky Blue */
+  z-index: 1;
+}
+
+.stickyColumn {
+  position: sticky;
+  left: 0;
+  background-color: #ffd966; /* Set the background color as needed */
+  z-index: 2;
+}
+.inputPoint {
+  height: 48px;
+  border: none;
+}
+.inputPoint:disabled {
+  background: #dddddd;
+}
+.totalPoint {
+  font-weight: 600;
+  background-color: #f4b084; /* Sky Blue */
+}
+
+.element {
+  border: 1px solid #000;
+}

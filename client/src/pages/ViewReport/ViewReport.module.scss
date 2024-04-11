@@ -1,0 +1,216 @@
+@import '../../components/Pagination/colors.scss';
+
+.container__wrap {
+  width: 100%;
+  padding: 10px;
+
+  &_header {
+    height: 58px;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #0a6971;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+  .container {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 20rem + 2px);
+    padding: 10px 20px;
+
+    border-radius: 10px;
+    border: 1px solid $text_300;
+    .table_container {
+      overflow-y: auto;
+      .table__header {
+        &_wrap {
+          width: 100%;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+
+          &_thead {
+            height: 50px;
+            background-color: #e3e7f2;
+          }
+        }
+      }
+
+      .table__body {
+        &_wrap {
+          width: 100%;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+
+          &_row {
+            height: 50px;
+            cursor: pointer;
+
+            &:hover {
+              // background-color: #7fcad1 !important;
+            }
+
+            &:nth-child(odd) {
+              background-color: #f6f7f9;
+            }
+
+            td {
+              text-align: -webkit-center;
+
+              img {
+                height: 46px;
+                width: auto;
+              }
+
+              .status {
+                color: white;
+                width: 120px;
+                border-radius: 3px;
+                font-size: 14px;
+                padding: 0.7rem 0;
+
+                &_accept {
+                  background-color: #00c64f;
+                }
+
+                &_pending {
+                  background-color: #ffa927;
+                }
+
+                &_cancel {
+                  background-color: #ff2727;
+                }
+              }
+              & {
+                border-bottom: 1px solid #ccc; /* Choose a color for the divider */
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 1rem;
+      margin-top: 5px;
+      border-bottom: $text_300 solid 1px;
+
+      &_filter {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 4rem;
+      }
+      &_right {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 0.5rem;
+        align-items: flex-end;
+        &_checkbox {
+          display: flex;
+          align-items: center;
+          color: rgb(47, 47, 47);
+          margin-right: 24px;
+        }
+      }
+
+      &_search {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.paginationBar_container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  padding: 12px 24px;
+}
+.button_wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.button_wrapper button {
+  padding: 16px 15px;
+  font-style: bold;
+}
+.icon {
+  margin-left: 24px;
+  font-size: 20px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  .icon {
+    margin-left: 24px;
+    font-size: 16px;
+  }
+}
+.actions {
+  display: flex;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.active {
+  color: var(--primary) !important;
+}
+.menu-item {
+  display: inline-block;
+  margin: 0 48px;
+
+  & a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  & a:hover {
+    // opacity: 0.6;
+  }
+  font-weight: 500;
+}
+.filter {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 0.75rem;
+  z-index: 2;
+  margin-right: 24px;
+
+  &__ic {
+    font-size: 2.5rem;
+    color: #6faf8c;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &--active {
+      filter: brightness(1.2);
+    }
+  }
+}

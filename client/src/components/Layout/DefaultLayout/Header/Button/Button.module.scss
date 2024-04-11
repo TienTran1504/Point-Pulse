@@ -1,0 +1,27 @@
+/* Button.css */
+.wrapper {
+  margin-right: 24px;
+}
+.custom-button {
+  background-color: var(--button); /* Màu nền xanh lá cây */
+  color: white; /* Màu chữ trắng */
+  padding: 10px 15px; /* Kích thước padding */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Chuyển đổi con trỏ khi di chuột vào nút */
+  border: none; /* Không có đường viền */
+  border-radius: 4px; /* Góc bo tròn */
+  font-weight: 700;
+}
+
+.icon {
+  margin-left: 12px;
+}
+
+.custom-button:hover {
+  background-color: var(--hover-color); /* Màu nền xanh lá cây nhạt khi hover */
+}
+
+.custom-button:disabled {
+  background-color: #cccccc; /* Màu nền xám cho nút bị vô hiệu hóa */
+  cursor: not-allowed; /* Con trỏ không cho sự kiện không hoạt động */
+}

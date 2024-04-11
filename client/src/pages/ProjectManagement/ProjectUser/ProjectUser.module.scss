@@ -1,0 +1,122 @@
+.wrapper {
+  padding: 12px 24px;
+  .header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.button_wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.button_wrapper button {
+  padding: 12px 15px;
+  font-style: bold;
+}
+.icon {
+  margin-left: 24px;
+  font-size: 16px;
+}
+table.tableProjectUser {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th.header_project_user,
+th.header_project_user_date,
+td.data_project_user,
+td.data_project_user_edit {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th.header_project_user,
+th.header_project_user_date {
+  width: 11.11%;
+  background-color: #f2f2f2;
+}
+th:nth-child(5).header_project_user_date,
+th:nth-child(6).header_project_user_date,
+th:nth-child(7).header_project_user,
+th:nth-child(1).header_project_user {
+  width: 4%;
+}
+tr:hover {
+  // background-color: #f5f5f5;
+  // opacity: 0.5;
+}
+
+td:nth-child(4).data_project_user,
+td:nth-child(5).data_project_user,
+td:nth-child(6).data_project_user {
+  text-align: center;
+}
+
+td:nth-child(7).data_project_user_edit {
+  display: flex;
+  text-align: center;
+
+  justify-content: space-around; /* Canh giữa các phần tử trong cột */
+  // max-width: max-content; /* Đặt chiều rộng tối đa bằng với nội dung */
+}
+
+.actions {
+  display: flex;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.active {
+  color: var(--primary) !important;
+}
+.menu-item {
+  display: inline-block;
+  margin: 0 48px;
+
+  & a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  & a:hover {
+    opacity: 0.6;
+  }
+  font-weight: 500;
+}
+
+.button-wrapper {
+  margin: 20px;
+  .wrapper {
+    margin-right: 24px;
+  }
+  .custom-button {
+    background-color: var(--button); /* Màu nền xanh lá cây */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 15px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Chuyển đổi con trỏ khi di chuột vào nút */
+    border: none; /* Không có đường viền */
+    border-radius: 4px; /* Góc bo tròn */
+    font-weight: 700;
+  }
+
+  .icon {
+    margin-left: 12px;
+    font-size: 16px;
+  }
+
+  .custom-button:hover {
+    background-color: var(--hover-color); /* Màu nền xanh lá cây nhạt khi hover */
+  }
+
+  .custom-button:disabled {
+    background-color: #cccccc; /* Màu nền xám cho nút bị vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ không cho sự kiện không hoạt động */
+  }
+}

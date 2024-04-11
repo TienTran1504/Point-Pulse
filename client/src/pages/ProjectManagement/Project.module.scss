@@ -1,0 +1,80 @@
+.wrapper {
+  padding: 12px 24px;
+}
+.button_wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.button_wrapper button {
+  padding: 12px 15px;
+  font-style: bold;
+}
+.icon {
+  margin-left: 24px;
+  font-size: 16px;
+}
+table.tableProject {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th.header_project,
+th.header_project_date,
+td.data_project,
+td.data_project_edit {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th.header_project,
+th.header_project_date {
+  width: 16%;
+  background-color: #f2f2f2;
+}
+th:nth-child(1).header_project,
+th:nth-child(7).header_project,
+th:nth-child(5).header_project_date,
+th:nth-child(6).header_project_date {
+  width: 4%;
+}
+
+td:nth-child(4).data_project,
+td:nth-child(5).data_project,
+td:nth-child(6).data_project {
+  text-align: center;
+}
+
+.data_project_edit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.active {
+  color: var(--primary) !important;
+}
+.menu-item {
+  display: inline-block;
+  margin: 0 48px;
+
+  & a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  & a:hover {
+    opacity: 0.6;
+  }
+  font-weight: 500;
+}

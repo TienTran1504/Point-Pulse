@@ -1,0 +1,227 @@
+.wrapper {
+  padding: 12px 24px;
+}
+.button_wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: flex-end;
+}
+.button_wrapper button {
+  padding: 12px 15px;
+  font-style: bold;
+}
+.icon {
+  margin-left: 24px;
+  font-size: 16px;
+}
+.table-container {
+  width: 100%;
+  // padding: 10px 20px;
+  height: 72rem;
+
+  overflow: scroll;
+
+  table.table-project-point {
+    border-collapse: collapse;
+    // margin: 20px 0;
+    width: 100%; /* Make sure the table takes the full width of the container */
+  }
+}
+.stickyRow {
+  position: sticky;
+  top: 0;
+  background-color: #bdd7ee; /* Sky Blue */
+  contain: content;
+  padding: 0;
+  z-index: 3;
+}
+
+.stickyColumn {
+  position: sticky;
+  left: 1px;
+  top: 1px;
+  background-color: #ffd966; /* Set the background color as needed */
+  width: 12rem;
+  contain: content;
+  padding: 0;
+
+  z-index: 2;
+}
+.inputPoint {
+  width: 100%;
+  height: 48px;
+  padding: 0 4px;
+  border: none;
+}
+.inputPoint:disabled {
+  background: #dddddd;
+}
+.disabled {
+  background: #dddddd;
+}
+.totalPoint {
+  font-weight: 600;
+  background-color: #f4b084;
+  .total {
+    width: 100%;
+    margin-left: 4px;
+  }
+}
+
+.element {
+  padding: 0;
+  border: 1px solid #000;
+  border-top: none;
+  border-left: none;
+}
+.elementHeader {
+  min-width: 140px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.elementHeaderFirst {
+  border: 1px solid #000;
+}
+.elementHeader:last-child {
+  border-right: 1px solid #000;
+}
+.elementSide {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  height: 49px;
+  width: 12rem;
+}
+.elementLastSide {
+  border: 1px solid #000;
+  height: 49px;
+}
+.elementEmpty {
+  padding-top: 50px;
+  border-bottom: 1px solid #000;
+}
+
+th.header_project_point,
+td.data_project_point {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.actions {
+  display: flex;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.active {
+  color: var(--primary) !important;
+}
+.menu-item {
+  display: inline-block;
+  margin: 0 48px;
+
+  & a {
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+  }
+  & a:hover {
+    opacity: 0.6;
+  }
+  font-weight: 500;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  .icon {
+    margin-left: 24px;
+    font-size: 16px;
+  }
+  margin-bottom: 20px;
+}
+
+.button-wrapper {
+  margin: 20px;
+  .wrapper {
+    margin-right: 24px;
+  }
+  .custom-button {
+    background-color: var(--button); /* Màu nền xanh lá cây */
+    color: white; /* Màu chữ trắng */
+    padding: 10px 15px; /* Kích thước padding */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Chuyển đổi con trỏ khi di chuột vào nút */
+    border: none; /* Không có đường viền */
+    border-radius: 4px; /* Góc bo tròn */
+    font-weight: 700;
+  }
+
+  .icon {
+    margin-left: 12px;
+  }
+
+  .custom-button:hover {
+    background-color: var(--hover-color); /* Màu nền xanh lá cây nhạt khi hover */
+  }
+
+  .custom-button:disabled {
+    background-color: #cccccc; /* Màu nền xám cho nút bị vô hiệu hóa */
+    cursor: not-allowed; /* Con trỏ không cho sự kiện không hoạt động */
+  }
+}
+
+.state {
+  display: flex;
+  .chooseFile {
+    margin-right: 20px;
+    input[type='file'] {
+      width: 30rem;
+      max-width: 100%;
+      color: #444;
+      padding: 4px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid #555;
+    }
+
+    input[type='file']::file-selector-button {
+      margin-right: 20px;
+      border: none;
+      background: #084cdf;
+      padding: 10px 20px;
+      border-radius: 10px;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    input[type='file']::file-selector-button:hover {
+      background: #0d45a5;
+    }
+  }
+}
+
+.filter {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 0.75rem;
+  z-index: 10;
+  margin-right: 24px;
+
+  &__ic {
+    font-size: 2.5rem;
+    color: #6faf8c;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &--active {
+      filter: brightness(1.2);
+    }
+  }
+}
